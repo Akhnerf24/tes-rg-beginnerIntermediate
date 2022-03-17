@@ -8,22 +8,22 @@
 	<p id="demo"></p>
 <script>
 
-let n ;
+let m = 100007;
+let o = 123;
+let g = 1;
 
-for (let i = 0; i <= 10;) {
+for (let i = 0; i <= 100; i++){
 
-    if (i > 0) {
-      i = tot * 123;
-    } else  {
-        i = 1;
+    if (i >= 1){
+        g = (g * o) % m ; 
+        document.write("ke - " + i + ":" + g + "<br>");
     }
-
-    let tot = i % 100007;
-
-    document.write("ke - " + i + ":" + tot + "<br>");
-    i++;
+    else{
+        document.write("ke - " + i + ":" + g + "<br>");
+    } 
+    
 }
-	    
+		
 </script>
 </body>
 </html>
